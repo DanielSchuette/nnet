@@ -7,7 +7,7 @@ description = "A feedforward neural network."
 license = "GPL-3.0"
 repository = "https://github.com/DanielSchuette/nnet"
 readme = "./README.md"
-keywords = ["neural network", "machine learning", "linear algebra"]
+keywords = ["neuralnetwork", "machinelearning", "linearalgebra"]
 
 [dependencies]
 rand = "0.6.5"

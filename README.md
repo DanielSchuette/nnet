@@ -1,4 +1,7 @@
 # NNet
+
+![crates.io](https://img.shields.io/crates/v/nnet.svg)
+
 A feedforward neural network implemented in Rust.
 
 ## Use the library
