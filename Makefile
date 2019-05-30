@@ -13,7 +13,7 @@ docs:
 	cargo doc && fox -t target/doc/nnet/all.html
 
 publish:
-	cargo publish
+	cargo publish --allow-dirty
 
 clean:
 	cargo clean

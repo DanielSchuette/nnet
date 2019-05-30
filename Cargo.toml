@@ -1,6 +1,6 @@
 [package]
 name = "nnet"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["DanielSchuette <d.schuette@online.de>"]
 edition = "2018"
 description = "A feedforward neural network."
