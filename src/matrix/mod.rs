@@ -104,3 +104,18 @@ mod tests {
         assert_eq!(tt, m);
     }
 }
+
+/// Get column number `col` from a matrix `m`. The column is a newly allocated
+/// matrix, leaving the input untouched.
+pub fn get_column(m: &Matrix, col: usize) -> Matrix {
+    let mut new: Matrix = vec![];
+    for row in 0..m.len() {
+        new.push(vec![m[row][col]]);
+    }
+    new
+}
+
+/// TODO: implementation & documentation.
+pub fn vec_diff() -> Vector {
+    vec![]
+}
