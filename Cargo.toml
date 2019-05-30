@@ -1,8 +1,13 @@
 [package]
 name = "nnet"
-version = "0.1.0"
+version = "0.0.1"
 authors = ["DanielSchuette <d.schuette@online.de>"]
 edition = "2018"
+description = "A feedforward neural network."
+license = "GPL-3.0"
+repository = "https://github.com/DanielSchuette/nnet"
+readme = "./README.md"
+keywords = ["neural network", "machine learning", "linear algebra"]
 
 [dependencies]
 rand = "0.6.5"
