@@ -4,7 +4,9 @@ use rand::Rng;
 pub type Matrix = Vec<Vec<f64>>;
 pub type Vector = Vec<f64>;
 
-pub fn create_rand_matrix(matrix: &mut Matrix, rows: usize, cols: usize) {
+/// Appends the specified number of `rows` and `columns` to the matrix `m`. The
+/// values are randomly chosen in the exclusive interval `(-1, 1)`.
+pub fn create_rand_matrix(m: &mut Matrix, rows: usize, cols: usize) {
     let mut rng = rand::thread_rng();
     for _ in 0..rows {
         let mut new_row: Vec<f64> = vec![];
@@ -12,7 +14,7 @@ pub fn create_rand_matrix(matrix: &mut Matrix, rows: usize, cols: usize) {
             let r = rng.gen_range(0.0, 2.0) - 1.0; /* (-1, 1) */
             new_row.push(r);
         }
-        matrix.push(new_row);
+        m.push(new_row);
     }
 }
 
@@ -48,6 +50,7 @@ pub fn dot_product(m1: &Matrix, m2: &Matrix) -> Result<Matrix, String> {
     Ok(res)
 }
 
+/// Returns the transpose of input matrix `m`.
 pub fn transpose(m: &Matrix) -> Matrix {
     let mut res: Matrix = vec![];
 
