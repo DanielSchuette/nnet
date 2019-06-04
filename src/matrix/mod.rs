@@ -18,13 +18,10 @@ pub fn create_rand_matrix(m: &mut Matrix, rows: usize, cols: usize) {
     }
 }
 
-/// Calcuates the dot product of two matrices. Dimension checks are performed
-/// such as that a column vector must be passed as `m2` to work with this
-/// function.
+/// Calcuates the dot product of an (n, p) matrix m1 and a (p, m) matrix m2.
 pub fn dot_product(m1: &Matrix, m2: &Matrix) -> Result<Matrix, String> {
     // check for correct dimensions first
-    if !(m1.len() == m2[0].len() && m1[0].len() == m2.len())
-       && !(m1[0].len() == m2.len() && m2[0].len() == 1)
+    if !(m1[0].len() == m2.len())
     {
         let err_msg = format!("Failed to multiply dimensions {}x{} and {}x{}",
                               m1.len(),
