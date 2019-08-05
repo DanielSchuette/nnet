@@ -631,10 +631,9 @@ to attach them to the start of each source file to most effectively
 state the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
-  The PID pendulum controller illustrates several concepts of real-world
-PID controllers, that theoretical descriptions often disregard.
+  nnet is a feedforward neural net implement in Rust.
 
-    Copyright (C) 2019 Philipp Schuette
+    Copyright (C) 2019 Daniel Schuette
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -654,7 +653,7 @@ Also add information on how to contact you by electronic and paper mail.
   If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-    PID_pendulum  Copyright (C) 2019 Philipp Schuette
+    nnet  Copyright (C) 2019 Daniel Schuette
     This program comes with ABSOLUTELY NO WARRANTY.
     This is free software, and you are welcome to redistribute it
     under certain conditions.
